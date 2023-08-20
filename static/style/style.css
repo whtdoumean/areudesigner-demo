@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #171717;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(56% 24%, #2F2F2F, #171717);
+}
+
+.main {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 1200px;
+}
+
+@media screen and (max-width: 1366px) {
+  .main {
+    width: 992px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .main {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    width: 100%;
+    padding: 0 0.75rem;
+  }
+}
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  height: 3.75rem;
+  margin-top: 42vh;
+  border-radius: 1rem;
+  background: transparent;
+  z-index: 100;
+}
+.search-bar .search-line {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #444;
+  border: 2px solid #444;
+  border-radius: 1rem;
+  box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
+  color: #E4E4E4;
+  z-index: 101;
+  transition: all ease-in-out 0.2s;
+}
+.search-bar .search-line:hover {
+  border: 2px solid #9C7BFF;
+  box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+  z-index: 100;
+}
+.search-bar .search-line:focus {
+  border: 2px solid #9C7BFF;
+  box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+  z-index: 100;
+}
+.search-bar .search-line:focus-visible {
+  border: 2px solid #9C7BFF;
+  box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+  z-index: 100;
+  outline: none;
+}
+.search-bar .search-button {
+  height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75rem;
+  background-color: #9C7BFF;
+  border: solid 2px #9C7BFF;
+  border-radius: 1rem;
+  box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
+  z-index: 100;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+.search-bar .search-button .search-img {
+  height: 100%;
+  width: auto;
+  color: #E4E4E4;
+}
+.search-bar .search-button:hover {
+  background-color: #a588fd;
+  border: solid 2px #a588fd;
+  box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+  z-index: 100;
+}/*# sourceMappingURL=style.css.map */

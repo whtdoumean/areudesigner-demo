@@ -1,0 +1,136 @@
+$gradient-light: #2F2F2F;
+$gradient-dark: #171717;
+$dark: #444;
+$light: #E4E4E4;
+$accent: #9C7BFF;
+$accent-light: #a588fd;
+$search-line-size: 1.5rem;
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    background: #171717;
+    padding: 0;
+    margin: 0;
+  }
+  
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(56% 24%, $gradient-light, $gradient-dark);
+}
+
+.main {
+    height: fit-content;
+    width: 1200px;
+}
+
+@media screen and (max-width: 1366px) {
+    .main {
+        width: 992px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .main {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+        padding: 0 0.75rem;
+    }
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    height: calc($search-line-size * 2.5);
+    margin-top: 42vh;
+    border-radius: 1rem;
+
+    background: transparent;
+
+    z-index: 100;
+
+    .search-line {
+        height: 100%;
+        width: 100%;
+        font-size: $search-line-size;
+        padding: 0.75rem 1.25rem;
+        background-color: $dark;
+        border: 2px solid $dark;
+        border-radius: 1rem;
+
+        box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
+
+        color: $light;
+
+        z-index: 101;
+
+        transition: all ease-in-out .2s;
+    }
+
+    .search-line:hover {
+        border: 2px solid $accent;
+        box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+        z-index: 100;
+    }
+
+    .search-line:focus {
+        border: 2px solid $accent;
+        box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+        z-index: 100;
+    }
+
+    .search-line:focus-visible {
+        border: 2px solid $accent;
+        box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+        z-index: 100;
+        outline:none;
+    }
+
+    .search-button {
+        height: 100%;
+        width: fit-content;
+        padding: 0.75rem;
+        background-color: $accent;
+        border: solid 2px $accent;
+        border-radius: 1rem;
+
+        box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
+
+        z-index: 100;
+
+        transition: all ease-in-out .2s;
+
+        cursor: pointer;
+
+        .search-img {
+            height: 100%;
+            width: auto;
+            color: $light;
+        }
+    }
+
+    .search-button:hover {
+        background-color: $accent-light;
+        border: solid 2px $accent-light;
+        box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+        z-index: 100;
+    }
+
+}
