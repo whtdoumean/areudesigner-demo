@@ -25,7 +25,7 @@ $search-line-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: radial-gradient(56% 24%, $gradient-light, $gradient-dark);
+    background: radial-gradient(60% 44% at 50% 47vh, $gradient-light, $gradient-dark);
 }
 
 .main {
@@ -52,8 +52,8 @@ $search-line-size: 1.5rem;
     }
 
     .wrapper {
-        background: radial-gradient(80% 26%, #2F2F2F, #171717);
-      }
+        background: radial-gradient(100% 44% at 50% 47vh, $gradient-light, $gradient-dark);
+    }
 }
 
 .search-bar {
@@ -79,7 +79,6 @@ $search-line-size: 1.5rem;
         border: 2px solid $dark;
         border-radius: 1rem;
 
-        -webkit-appearance: none;
         -webkit-box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
         box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
 
@@ -92,7 +91,6 @@ $search-line-size: 1.5rem;
 
     .search-line:hover {
         border: 2px solid $accent;
-        -webkit-appearance: none;
         -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         z-index: 100;
@@ -100,7 +98,6 @@ $search-line-size: 1.5rem;
 
     .search-line:focus {
         border: 2px solid $accent;
-        -webkit-appearance: none;
         -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         z-index: 100;
@@ -108,7 +105,6 @@ $search-line-size: 1.5rem;
 
     .search-line:focus-visible {
         border: 2px solid $accent;
-        -webkit-appearance: none;
         -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         z-index: 100;
@@ -123,7 +119,6 @@ $search-line-size: 1.5rem;
         border: solid 2px $accent;
         border-radius: 1rem;
 
-        -webkit-appearance: none;
         -webkit-box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
         box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
 
@@ -144,7 +139,6 @@ $search-line-size: 1.5rem;
         background-color: $accent-light;
         border: solid 2px $accent-light;
 
-        -webkit-appearance: none;
         -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         z-index: 100;
