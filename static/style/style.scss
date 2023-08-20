@@ -50,6 +50,10 @@ $search-line-size: 1.5rem;
         width: 100%;
         padding: 0 0.75rem;
     }
+
+    .wrapper {
+        background: radial-gradient(80% 26%, #2F2F2F, #171717);
+      }
 }
 
 .search-bar {
@@ -75,6 +79,8 @@ $search-line-size: 1.5rem;
         border: 2px solid $dark;
         border-radius: 1rem;
 
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
         box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
 
         color: $light;
@@ -86,18 +92,24 @@ $search-line-size: 1.5rem;
 
     .search-line:hover {
         border: 2px solid $accent;
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         z-index: 100;
     }
 
     .search-line:focus {
         border: 2px solid $accent;
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         z-index: 100;
     }
 
     .search-line:focus-visible {
         border: 2px solid $accent;
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         z-index: 100;
         outline:none;
@@ -111,6 +123,8 @@ $search-line-size: 1.5rem;
         border: solid 2px $accent;
         border-radius: 1rem;
 
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
         box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
 
         z-index: 100;
@@ -129,6 +143,9 @@ $search-line-size: 1.5rem;
     .search-button:hover {
         background-color: $accent-light;
         border: solid 2px $accent-light;
+
+        -webkit-appearance: none;
+        -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
         z-index: 100;
     }
