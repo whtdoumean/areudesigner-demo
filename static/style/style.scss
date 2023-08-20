@@ -144,4 +144,13 @@ $search-line-size: 1.5rem;
         z-index: 100;
     }
 
+    .search-button:focus {
+        background-color: $accent-light;
+        border: solid 2px $accent-light;
+
+        -webkit-box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+        box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
+        z-index: 100;
+    }
+
 }
