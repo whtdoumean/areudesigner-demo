@@ -20,8 +20,8 @@ $bold-font: 700;
 	font-style: normal;
 	font-weight: 400;
 	src:
-		url('/static/font/Noto_Sans/ttf/NotoSans-Regular.ttf') format('ttf'),
-        url('/static/font/Noto_Sans/woff/NotoSans-Regular.woff') format('woff');
+		url('../font/Noto_Sans/ttf/NotoSans-Regular.ttf') format('ttf'),
+        url('../font/Noto_Sans/woff/NotoSans-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -29,8 +29,8 @@ $bold-font: 700;
 	font-style: normal;
 	font-weight: 500;
 	src:
-    url('/static/font/Noto_Sans/ttf/NotoSans-Medium.ttf') format('ttf'),
-    url('/static/font/Noto_Sans/woff/NotoSans-Medium.woff') format('woff');
+    url('../font/Noto_Sans/ttf/NotoSans-Medium.ttf') format('ttf'),
+    url('../font/Noto_Sans/woff/NotoSans-Medium.woff') format('woff');
 }
 
 @font-face {
@@ -38,8 +38,8 @@ $bold-font: 700;
 	font-style: normal;
 	font-weight: 700;
 	src:
-    url('static/font/Noto_Sans/ttf/NotoSans-Bold.ttf') format('ttf'),
-    url('static/font/Noto_Sans/woff/NotoSans-Bold.woff') format('woff');
+    url('../font/Noto_Sans/ttf/NotoSans-Bold.ttf') format('ttf'),
+    url('../font/Noto_Sans/woff/NotoSans-Bold.woff') format('woff');
 }
 
 * {
