@@ -84,6 +84,7 @@ html, body {
   z-index: 101;
   transition: box-shadow ease-in-out 0.2s;
   transition: border ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 .search-bar .search-line:hover {
   border: 2px solid #9C7BFF;
@@ -113,6 +114,8 @@ html, body {
   z-index: 100;
   transition: box-shadow ease-in-out 0.2s;
   transition: border ease-in-out 0.2s;
+  transition: box-shadow ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
   cursor: pointer;
 }
 .search-bar .search-button .search-img {
@@ -168,6 +171,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  transition: all ease-in-out 0.2s;
 }
 .search-item .search-item-title {
   font-weight: 500;
