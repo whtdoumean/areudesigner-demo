@@ -22,6 +22,10 @@
   font-family: Noto_Sans;
 }
 
+a {
+  text-decoration: none;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -84,7 +88,6 @@ html, body {
   z-index: 101;
   transition: box-shadow ease-in-out 0.2s;
   transition: border ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
 }
 .search-bar .search-line:hover {
   border: 2px solid #9C7BFF;
@@ -114,8 +117,7 @@ html, body {
   z-index: 100;
   transition: box-shadow ease-in-out 0.2s;
   transition: border ease-in-out 0.2s;
-  transition: box-shadow ease-in-out 0.2s;
-  transition: all ease-in-out 0.2s;
+  transition: background-color ease-in-out 0.2s;
   cursor: pointer;
 }
 .search-bar .search-button .search-img {
@@ -132,6 +134,24 @@ html, body {
   background-color: #a588fd;
   box-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.64);
   z-index: 100;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 2rem 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.footer-title {
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #909090;
+  text-align: center;
 }
 
 .index-page-margin {
@@ -171,7 +191,8 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  transition: all ease-in-out 0.2s;
+  z-index: 98;
+  transition: box-shadow ease-in-out 0.2s;
 }
 .search-item .search-item-title {
   font-weight: 500;
@@ -193,25 +214,28 @@ html, body {
 }
 
 .search-item:hover {
-  box-shadow: 0px 16px 44px 0px rgba(0, 0, 0, 0.44);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.36);
+  transform: scale(100.06%);
+  z-index: 97;
 }
 
-.footer {
+.item-wrapper {
   width: 100%;
-  height: 100%;
-  padding: 0 0 2rem 0;
-  z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  padding: 0 1.5em;
 }
 
-.footer-title {
-  white-space: nowrap;
-  font-size: 1rem;
+.item-title {
+  font-size: 3em;
+  color: #E4E4E4;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+
+.item-description {
+  color: #E4E4E4;
   font-weight: 400;
-  color: #909090;
-  text-align: center;
 }
 
 @media screen and (max-width: 1366px) {

@@ -1,0 +1,18 @@
+.item-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5em;
+}
+
+.item-title {
+    font-size: 3em;
+    color: $light;
+    font-weight: $bold-font;
+    margin-bottom: 0.4em;
+}
+
+.item-description {
+    color: $light;
+    font-weight: $normal-font;
+}

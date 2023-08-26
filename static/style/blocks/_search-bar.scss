@@ -1,0 +1,107 @@
+.search-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+
+    width: 1200px;
+    height: calc($search-line-size * 2.5);
+
+    margin-top: 0.75rem;
+    border-radius: 1rem;
+
+    background: transparent;
+
+    z-index: 100;
+
+    .search-line {
+        height: 100%;
+        width: 100%;
+
+        font-size: $search-line-size;
+        font-weight: $medium-font;
+
+        padding: 0.75rem 1.25rem;
+        background-color: $dark;
+        border: 2px solid $dark;
+        border-radius: 1rem;
+
+        -webkit-box-shadow: $shadow-before;
+        box-shadow: $shadow-before;
+
+        color: $light;
+
+        z-index: 101;
+
+        -webkit-transition: box-shadow 0.2s ease-in-out;
+        transition: box-shadow ease-in-out .2s;
+        transition: border ease-in-out .2s;
+    }
+
+    .search-line:hover {
+        border: 2px solid $accent;
+        -webkit-box-shadow: $shadow-after;
+        box-shadow: $shadow-after;
+        z-index: 100;
+    }
+
+    .search-line:focus {
+        border: 2px solid $accent;
+        -webkit-box-shadow: $shadow-after;
+        box-shadow: $shadow-after;
+        z-index: 100;
+    }
+
+    .search-line:focus-visible {
+        border: 2px solid $accent;
+        -webkit-box-shadow: $shadow-after;
+        box-shadow: $shadow-after;
+        z-index: 100;
+        outline:none;
+    }
+
+    .search-button {
+        height: 100%;
+        width: fit-content;
+        padding: 0.75rem;
+        background-color: $accent;
+        border: none;
+        border-radius: 1rem;
+
+        -webkit-box-shadow: $shadow-before;
+        box-shadow: $shadow-before;
+
+        z-index: 100;
+
+        -webkit-transition: box-shadow 0.2s ease-in-out 0s;
+        transition: box-shadow ease-in-out .2s;
+        transition: border ease-in-out .2s;
+        transition: background-color ease-in-out .2s;
+
+        cursor: pointer;
+
+        .search-img {
+            height: 100%;
+            width: auto;
+            color: $light;
+        }
+    }
+
+    .search-button:hover {
+        background-color: $accent-light;
+
+        -webkit-box-shadow: $shadow-after;
+        box-shadow: $shadow-after;
+        z-index: 100;
+    }
+
+    .search-button:focus {
+        background-color: $accent-light;
+
+        -webkit-box-shadow: $shadow-after;
+        box-shadow: $shadow-after;
+        z-index: 100;
+    }
+
+}
