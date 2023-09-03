@@ -1,3 +1,5 @@
+@use '../etc/variables';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,7 +23,7 @@ html, body {
     z-index: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(100% 40% at 50% 47vh, $gradient-light, $gradient-dark);
+    background: radial-gradient(100% 40% at 50% 47vh, variables.$gradient-light, variables.$gradient-dark);
 }
 
 .wrapper {
@@ -38,6 +40,6 @@ html, body {
 .main {
     height: 100%;
     width: 1200px;
-    padding: calc($search-line-size * 2.5 + 2rem) 1rem 2rem 1rem;
+    padding: calc(variables.$search-line-size * 2.5 + 2rem) 1rem 2rem 1rem;
     position:relative;
 }

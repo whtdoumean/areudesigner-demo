@@ -238,6 +238,17 @@ html, body {
   font-weight: 400;
 }
 
+.same-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.same-title {
+  color: #E4E4E4;
+}
+
 @media screen and (max-width: 1366px) {
   .main {
     width: 992px;
