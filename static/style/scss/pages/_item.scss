@@ -1,0 +1,102 @@
+@use '../etc/variables' as *;
+
+.item-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5em;
+}
+
+.item-title {
+    font-size: 3em;
+    color: $light;
+    font-weight: $bold-font;
+    margin-bottom: 0.4em;
+}
+
+.item-description {
+    font-size: 1.25rem;
+    color: $light;
+    font-weight: $normal-font;
+}
+
+.same-items {
+    position: relative;
+}
+
+.same-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.same-title {
+    font-size: 1.5rem;
+    color: $light;
+    font-weight: $semi-bold-font;
+}
+
+.сaurusel {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.сaurusel-button {
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.25rem;
+    margin: 0;
+    background-color: $dark;
+    border: none;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+
+#next {
+    left: calc(100% - 1.5rem);
+}
+
+.next-img {
+
+}
+
+.сaurusel-button:active {
+    border: none;
+}
+
+.caurusel-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: $dark;
+    color: $light;
+}
+
+.caurusel-title {
+    text-decoration: none;
+    color: $accent;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.caurusel-title:hover {
+    color: $light;
+}
+
+.caurusel-description {
+    font-size: 1rem;
+    display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;  
+        overflow: hidden;
+    
+    margin-top: 0.5rem;
+}
