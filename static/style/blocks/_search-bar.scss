@@ -6,7 +6,7 @@
     gap: 0.75rem;
 
     width: 1200px;
-    height: calc($search-line-size * 2.5);
+    height: calc(variables.$search-line-size * 2.5);
 
     margin-top: 0.75rem;
     border-radius: 1rem;
@@ -19,7 +19,7 @@
         height: 100%;
         width: 100%;
 
-        font-size: $search-line-size;
+        font-size: variables.$search-line-size;
         font-weight: $medium-font;
 
         padding: 0.75rem 1.25rem;

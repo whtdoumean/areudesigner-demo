@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RLT.HACK - Areudesigner Team</title>
-    <link rel="stylesheet" href="static/style/style.css">
-</head>
-<body>
-    <div class="gradient"></div>
-    <div class="wrapper">
-        <div class="search-bar index-page-margin">
-            <input class="search-line" placeholder="Найти товар...">
-            <button class="search-button" onclick="document.location='results.html'">
-                <img src="static/pictures/svg/search.svg" class="search-img">
-            </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RLT.HACK - Areudesigner Team</title>
+        <link rel="stylesheet" href="static/style/style.css">
+    </head>
+    <body>
+        <div class="gradient"></div>
+        <div class="wrapper">
+            <div class="search-bar index-page-margin">
+                <!-- <form action="results.html" method="GET"> -->
+                    <input class="search-line" id="search-line" placeholder="Найти товар...">
+                    <button class="search-button" id="search-button" onclick="document.location='results.html'">
+                        <img src="static/pictures/svg/search.svg" class="search-img">
+                    </button>
+                <!-- </form> -->
+            </div>
+            <div class="main">
+            </div>
+            <div class="footer">
+                <p class="footer-title">RLT.HACK - 2023</p>
+            </div>
         </div>
-        <div class="main">
-        </div>
-        <div class="footer">
-            <p class="footer-title">RLT.HACK - 2023</p>
-        </div>
-    </div>
-</body>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            function search() {
+                window.location = `results.html?t=${$('#search-line').val()}`;
+            }
+
+            $(document).on('keydown', function(e) {
+                if (e.key == 'Enter' && $('#search-line').is(':focus')) {
+                    search();
+                }
+            });
+            
+            $('#search-button').on('click', function(e) {
+                search();
+            })
+        </script>
+    </body>
 </html>
