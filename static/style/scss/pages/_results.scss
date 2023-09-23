@@ -1,4 +1,4 @@
-@use '/static/style/etc/variables';
+@use '../etc/variables' as *;
 
 .search-item-list {
     display: flex;
@@ -17,16 +17,16 @@
 .number-of-results-title {
     white-space: nowrap;
     font-size: 1rem;
-    font-weight: variables.$normal-font;
-    color: variables.$placeholder;
+    font-weight: $normal-font;
+    color: $placeholder;
 }
 
 
 .search-item {
     width: 100%;
     height: fit-content;
-    background-color: variables.$dark;
-    color: variables.$light;
+    background-color: $dark;
+    color: $light;
     padding: 1rem;
     border-radius: 1rem;
 
@@ -39,14 +39,14 @@
     transition: box-shadow ease-in-out .2s;
 
     .search-item-title {
-        font-weight: variables.$medium-font;
+        font-weight: $medium-font;
         font-size: 1.25rem;
-        color: variables.$accent;
+        color: $accent;
         cursor: pointer;
     }   
 
     .search-item-title:hover {
-        color: variables.$light;
+        color: $light;
     }
 
     .search-item-description {
@@ -57,15 +57,15 @@
         -webkit-box-orient: vertical;  
         overflow: hidden;
 
-        font-weight: variables.$normal-font;
+        font-weight: $normal-font;
         font-size: 1rem;
         
     }
 }
 
 .search-item:hover {
-    -webkit-box-shadow: variables.$shadow-light;
-    box-shadow: variables.$shadow-light;
+    -webkit-box-shadow: $shadow-light;
+    box-shadow: $shadow-light;
     transform: scale(100.06%);
 
     z-index: 97;

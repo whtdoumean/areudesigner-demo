@@ -1,4 +1,4 @@
-@use "etc/variables";
+@use "etc/variables" as *;
 @import "etc/fonts";
 @import "etc/base";
 
@@ -32,7 +32,7 @@
 @media screen and (max-width: 768px) {
     .main {
         width: 100%;
-        padding: calc(variables.$search-line-size * 2.5 + 2rem) 1rem 2rem 1rem;
+        padding: calc($search-line-size * 2.5 + 2rem) 1rem 2rem 1rem;
     }
 
     .search-bar {
@@ -41,7 +41,7 @@
     }
 
     .wrapper {
-        background: radial-gradient(100% 44% at 50% 47vh, variables.$gradient-light, variables.$gradient-dark);
+        background: radial-gradient(100% 44% at 50% 47vh, $gradient-light, $gradient-dark);
     }
 }
 

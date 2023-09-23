@@ -1,20 +1,21 @@
+@charset "UTF-8";
 @font-face {
   font-family: Noto_Sans;
   font-style: normal;
   font-weight: 400;
-  src: url("../font/Noto_Sans/ttf/NotoSans-Regular.ttf") format("ttf"), url("../font/Noto_Sans/woff/NotoSans-Regular.woff") format("woff");
+  src: url("/static/font/Noto_Sans/ttf/NotoSans-Regular.ttf") format("ttf"), url("/static/font/Noto_Sans/woff/NotoSans-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Noto_Sans";
   font-style: normal;
   font-weight: 500;
-  src: url("../font/Noto_Sans/ttf/NotoSans-Medium.ttf") format("ttf"), url("../font/Noto_Sans/woff/NotoSans-Medium.woff") format("woff");
+  src: url("/static/font/Noto_Sans/ttf/NotoSans-Medium.ttf") format("ttf"), url("/static/font/Noto_Sans/woff/NotoSans-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "Noto_Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../font/Noto_Sans/ttf/NotoSans-Bold.ttf") format("ttf"), url("../font/Noto_Sans/woff/NotoSans-Bold.woff") format("woff");
+  src: url("/static/font/Noto_Sans/ttf/NotoSans-Bold.ttf") format("ttf"), url("/static/font/Noto_Sans/woff/NotoSans-Bold.woff") format("woff");
 }
 * {
   box-sizing: border-box;
@@ -234,8 +235,13 @@ html, body {
 }
 
 .item-description {
+  font-size: 1.25rem;
   color: #E4E4E4;
   font-weight: 400;
+}
+
+.same-items {
+  position: relative;
 }
 
 .same-items {
@@ -246,7 +252,71 @@ html, body {
 }
 
 .same-title {
+  font-size: 1.5rem;
   color: #E4E4E4;
+  font-weight: 600;
+}
+
+.сaurusel {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.сaurusel-button {
+  outline: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.25rem;
+  margin: 0;
+  background-color: #444;
+  border: none;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
+#next {
+  left: calc(100% - 1.5rem);
+}
+
+.сaurusel-button:active {
+  border: none;
+}
+
+.caurusel-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #444;
+  color: #E4E4E4;
+}
+
+.caurusel-title {
+  text-decoration: none;
+  color: #9C7BFF;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.caurusel-title:hover {
+  color: #E4E4E4;
+}
+
+.caurusel-description {
+  font-size: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0.5rem;
 }
 
 @media screen and (max-width: 1366px) {
@@ -277,4 +347,4 @@ html, body {
   .wrapper {
     background: radial-gradient(100% 44% at 50% 47vh, #2F2F2F, #171717);
   }
-}/*# sourceMappingURL=style.css.map */
+}
